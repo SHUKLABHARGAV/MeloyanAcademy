@@ -11,17 +11,17 @@ const Footer = () => {
             {/* Footer About */}
             <div className="col-lg-4 col-md-6 footer-about">
               <a href="/" className="logo d-flex align-items-center">
-                <span className="sitename">Mentor</span>
+                <span className="sitename">MELOYAN ACADEMY</span>
               </a>
 
               <div className="footer-contact pt-3">
-                <p>A108 Adam Street</p>
-                <p>New York, NY 535022</p>
+                <p>200-430 Hazeldean Rd,</p>
+                <p> Ottawa, ON K2L 1E8</p>
                 <p className="mt-3">
-                  <strong>Phone:</strong> <span>+1 5589 55488 55</span>
+                  <strong>Phone:</strong> <span>+1 819 449 8507</span>
                 </p>
                 <p>
-                  <strong>Email:</strong> <span>info@example.com</span>
+                  <strong>Email:</strong> <span>meloyanacademy@gmail.com</span>
                 </p>
               </div>
 

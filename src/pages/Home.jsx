@@ -1,11 +1,13 @@
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Counts from "../components/Counts";
+import ProgramsSection from "../components/ProgramsSection";
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <ProgramsSection />
       <About />
       <Counts />
     </>

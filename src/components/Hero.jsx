@@ -13,10 +13,13 @@ const Hero = () => {
 
       <div className="container">
         <h2 data-aos="fade-up" data-aos-delay="100">
-          Learning Today,<br />Leading Tomorrow
+      <h2> Math Can Be Exciting<br /></h2><h2 style={{fontWeight:800}}>And We’ll Show Your Child How</h2>
         </h2>
         <p data-aos="fade-up" data-aos-delay="200">
-          We are team of talented designers making websites with Bootstrap
+        At Meloyan Academy, we help children see math in a completely new light — without
+the stress, without the confusion, and without the fear. Through clear explanations,
+proven teaching strategies, and a supportive environment, we turn “I don’t get it” into “I
+love this!”
         </p>
         <div className="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
           <a href="#courses" className="btn-get-started">Get Started</a>

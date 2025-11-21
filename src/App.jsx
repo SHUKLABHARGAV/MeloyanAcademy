@@ -8,6 +8,7 @@ import About from "./pages/About";
 import Courses from "./pages/Courses";
 import CourseDetails from "./pages/CourseDetails";
 import Trainers from "./pages/Trainers";
+import Contact from "./pages/Contact";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
        <Route path="/courses" element={<Courses />} />
         <Route path="/courses/:id" element={<CourseDetails />} />
        <Route path="/trainers" element={<Trainers />} />
+       <Route path="/contact" element={<Contact />} />
 
       </Routes>
 
