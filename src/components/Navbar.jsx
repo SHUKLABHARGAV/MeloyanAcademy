@@ -12,9 +12,13 @@ const Navbar = () => {
       <div className="container-fluid container-xl d-flex align-items-center justify-content-between">
 
         {/* LOGO */}
-        <a href="/" className="logo d-flex align-items-center">
+        {/* <a href="/" className="logo d-flex align-items-center">
           <img src={logo} alt="logo" />
-        </a>
+        </a> */}
+        <a href="/" className="logo">
+  <img src={logo} alt="Meloyan Academy" />
+</a>
+
 
         {/* GET STARTED (mobile only) */}
         <a className="btn-getstarted d-xl-none" href="#courses">Get Started</a>

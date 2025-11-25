@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
-import heroBg from "../assets/img/hero-bg.jpg";
+import heroBg from "../assets/img/hero4.jpg";
 
 const Hero = () => {
   useEffect(() => {
@@ -13,7 +13,7 @@ const Hero = () => {
 
       <div className="container">
         <h2 data-aos="fade-up" data-aos-delay="100">
-      <h2> Math Can Be Exciting<br /></h2><h2 style={{fontWeight:800}}>And We’ll Show Your Child How</h2>
+      <h2> Math Can Be Exciting<br /></h2><h2 style={{fontWeight:800,color:"#dc9f6f"}}>And We’ll Show Your Child How</h2>
         </h2>
         <p data-aos="fade-up" data-aos-delay="200">
         At Meloyan Academy, we help children see math in a completely new light — without

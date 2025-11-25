@@ -1,12 +1,13 @@
 import React, { useEffect } from "react";
 import Breadcrumb from "../components/Breadcrumb";
-import aboutImg from "../assets/img/about.jpg";
+import aboutImg from "../assets/img/HERO2.jpg";
 
 // animation libraries
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 import PureCounter from "@srexi/purecounterjs";
+import Testimonials from "../components/Testimonials";
 
 export default function About() {
   useEffect(() => {
@@ -37,26 +38,17 @@ export default function About() {
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              <h3>Voluptatem dignissimos provident quasi corporis</h3>
-              <p className="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-              </p>
+              <h3>Why Families Trust Meloyan Academy</h3>
+               <p className="fst-italic" style={{fontWeight:500}}>
+             At Meloyan Academy, every student receives the individualized support they need to succeed — academically, emotionally, and confidently. Our approach blends expert teaching with a warm, encouraging environment that helps learners grow at their own pace.
+            </p>
 
               <ul>
-                <li>
-                  <i className="bi bi-check-circle"></i>
-                  <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-                </li>
-                <li>
-                  <i className="bi bi-check-circle"></i>
-                  <span>Duis aute irure dolor in reprehenderit...</span>
-                </li>
-                <li>
-                  <i className="bi bi-check-circle"></i>
-                  <span>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat...
-                  </span>
-                </li>
+                <li><i className="bi bi-check-circle"></i> Personalized learning plans</li>
+              <li><i className="bi bi-check-circle"></i> Expert teachers & counsellors</li>
+              <li><i className="bi bi-check-circle"></i>Supportive & inclusive environment</li>
+              <li><i className="bi bi-check-circle"></i> Clear communication with parents</li>
+            
               </ul>
             </div>
           </div>
@@ -117,7 +109,8 @@ export default function About() {
           </div>
         </div>
       </section>
-
+<Testimonials/>
     </main>
+    
   );
 }

@@ -856,6 +856,7 @@ section,
   height: 100%;
   object-fit: cover;
   z-index: 1;
+  filter: brightness(80%);
 }
 
 .hero:before {
@@ -968,6 +969,25 @@ section,
 .about .content .read-more:hover i {
   margin-left: 10px;
 }
+/* Make row children the same height */
+.about .row {
+  align-items: stretch;
+}
+
+/* Left image container forces image to fill full height */
+.left-img {
+  display: flex;
+  height: 100%;
+}
+
+/* Image styling */
+.about-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* crop without distortion */
+  border-radius: 12px;
+}
+
 
 /*--------------------------------------------------------------
 # Counts Section
@@ -1910,10 +1930,13 @@ section,
 .mobile-nav-active {
   overflow: hidden;
 }
+.hero-title-accent {
+  color: #902c39;     /* your theme color */
+  font-weight: 800;
+}
 
- 
-.section .container .Programbtn {
-  background: var(--accent-color);
+ .Programbtn {
+  background: transparent;
   color: var(--contrast-color);
   font-family: var(--heading-font);
   font-weight: 500;
@@ -1921,15 +1944,106 @@ section,
   letter-spacing: 1px;
   padding: 10px 24px 12px 24px;
   border-radius: 50px;
+  border: 1px solid white;
   transition: 0.3s;
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
 
-.section.container.Programbtn a:hover {
-  /* color: var(--contrast-color);  */
-  color: color-mix(in srgb, var(--contrast-color), transparent 20%);
-   
+/* FIXED Hover */
+.Programbtn:hover {
+  background: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  color: #fff;
 }
+/* Founder Section */
+.founder.section {
+  padding: 80px 0;
+}
+
+.founder-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.founder-name {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--accent-color);
+}
+
+.founder-role {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.founder-quote {
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.founder-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 25px;
+}
+
+.founder-list li {
+  font-size: 1rem;
+  padding: 6px 0;
+  position: relative;
+  padding-left: 25px;
+}
+
+.founder-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.founder-btn {
+  background: var(--accent-color);
+  color: white;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.founder-btn:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+.founder-img {
+  width: 100%;
+  max-width: 440px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.aboutSwiper {
+  padding-bottom: 50px;
+}
+
+.swiper-pagination-bullet {
+  background: var(--accent-color);
+  width: 10px;
+  height: 10px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
  

@@ -12,9 +12,10 @@ const ProgramsSection = () => {
     <section className="section" style={{ paddingTop: "60px" }}>
       <div className="container">
         <div className="row gy-4">
-          {programData.map((program, index) => (
+          {programData.map((program) => (
             <ProgramCard
-              key={index}
+               key={program.id}
+    id={program.id}   
               title={program.title}
               description={program.description}
               link={program.link}
