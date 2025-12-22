@@ -10,10 +10,11 @@ import CourseDetails from "./pages/CourseDetails";
 import Trainers from "./pages/Trainers";
 import Contact from "./pages/Contact";
 import ProgramDetails from "./components/ProgramDetails";
-
+import ClarityTracker from "./pages/ClarityTracker";
 export default function App() {
   return (
     <BrowserRouter>
+       <ClarityTracker />
       <Navbar />
 
       <Routes>
